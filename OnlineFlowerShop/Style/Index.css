@@ -10,7 +10,7 @@ label {
 font-size : 100%;
 }
 footer {
-    background-color:chartreuse;
+    background-color:rgb(173, 243, 43);
     padding: 0.25px;
     margin-top: 0.2cm;
     text-align : center;
@@ -44,7 +44,7 @@ table{
 .style{
     border: 0;
     height: 1.5px;
-    background: rgb(19, 145, 7);
+    background: rgb(173, 243, 43);
     margin-right: 18%;
 }
 
@@ -52,7 +52,7 @@ table{
     background-color: white;
 }
 #flower {
-    margin-left: 7cm;
+    margin-left: 45%;
 }
 h2{
     padding-left: 10px;
@@ -62,9 +62,7 @@ h2{
     width: 3cm;
     margin-left: 2.2cm;
 }
-#worldpay {
-    margin-right: 12%;
-}
+
 
 #restart,#cancel,#quesMark1,#quesMark2,#flower {
     height: 0.5cm;
@@ -84,10 +82,10 @@ h2{
     right: -77%;
 }
 #sideImage  {
-height: 50%;
+    height: 50%;
     width: 50%;
-    margin-top: 10%;
-    margin-left: 11%;
+    margin-top: 28%;
+    margin-left: 45%;
 }
 .sideDiv {
     float: left;
@@ -105,4 +103,15 @@ input[type=number]{
 
 #FaxId, #Telephone, #Postcode {
     width: 50%;
+}
+#passwordId {
+    width: 25%;
+}
+#text {
+    margin-left: 35%;
+    margin-top: 5%;
+}
+#worldpay {
+    margin-right: 12%;
+    margin-top: -15%;
 }

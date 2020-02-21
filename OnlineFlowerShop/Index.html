@@ -5,8 +5,8 @@
     <title>
         OnlineFlowerShop
     </title>
-    <link rel="stylesheet" href="/Style/Index.css" type="text/css">
-<script src="/Script/Index.js"></script>
+    <link rel="stylesheet" href="Style/Index.css" type="text/css">
+<script src="Script/Index.js"></script>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     </header>
     <hr class="greenbar">
 <div class = "sideDiv">
-<img src="/Images/SideImage.jpg" id="sideImage" />
+<img src="Images/SideImage.jpg" id="sideImage" />
 </div>
     <aside>
     <div class="Container">
@@ -40,7 +40,7 @@
             <tr>
                 <td>Payment method </td>
                 <td><b>Visa</b></td>
-                <td rowspan="3"><img src="/Images/Visa.jpg" id="visa"></td>
+                <td rowspan="3"><img src="Images/Visa.jpg" id="visa"></td>
             
             </tr>
             <tr>
@@ -53,10 +53,10 @@
             </tr>
             
         </table>
-        
+      
         <table>
             <tr>
-                <th colspan=2>Card Details<img src="/Images/QuestionMark.jpg" id="quesMark1"/></th>
+                <th colspan=2>Card Details<img src="Images/QuestionMark.jpg" id="quesMark1"/></th>
         
             </tr>
                 <tr>
@@ -109,17 +109,20 @@
                 </tr>
                 <tr>
                     <td>* Cardholder's name </td>
-                    <td> <input type="text" name="holderName" maxlength = "50"size="50cm" required></td>
+                    <td> <input type="text" id="holderName" maxlength = "50"size="50cm" onchange="validateHolderName()" required>
+                    <div id="HolderComment"></div>
+                </td>
                 </tr>
             <tr>
-                <th colspan=2>Cardholder details<img src="/Images/QuestionMark.jpg" id="quesMark2" /></th>
+                <th colspan=2>Cardholder details<img src="Images/QuestionMark.jpg" id="quesMark2" /></th>
             </tr>
             <tr>
                 <td colspan=2>you must fill in fiels marked with *</td>
             </tr>
             <tr>
                 <td>* Address 1 </td>
-                <td><input type="text" name="Addr1" maxlength = "30" size="50cm" required><br>
+                <td><input type="text" id="Addr1" maxlength = "30" size="50cm" required><br>
+                    <div id="AddressComment"></div>
                 </td>
             </tr>
             <tr>
@@ -132,7 +135,9 @@
             </tr>
             <tr>
                 <td>* Town/City </td>
-                <td> <input type="text" name="town/city" size="50cm" required></td>
+                <td> <input type="text" id="townId" size="50cm" required>
+                <div id = "townComment"></div>
+                </td>
             </tr>
             <tr>
 
@@ -175,23 +180,22 @@
                 <td>* Email address </td>
                 <td> <input type="text" id="Email" size="50cm" onchange="ValidateEmail()" required>
                 <div id="mailId"></div>
-            </td>
+            </td> 
             </tr>
         </table>
-        
-
+   
         <div class="controls">
-            <img src="/Images/restart.png" id="restart"><label>START AGAIN</label><br>        
-            <img src="/Images/Cancel_icon.svg" id="cancel"><label>CANCEL </label>
-            <img src="/Images/flower.png" id="flower"><label><a href = "#"  onclick="validateNullField()">MAKE PAYMENT </a></label><br>
+            <img src="Images/restart.png" id="restart"><label>START AGAIN</label><br>        
+            <img src="Images/Cancel_icon.svg" id="cancel"><label>CANCEL </label>
+            <img src="Images/flower.png" id="flower"><label><a href = "#"  onclick="validateNullField()">MAKE PAYMENT </a></label><br>
             
         </div>
         <hr class="style">
         <div class="additionalInfo">
             <h4>Refunds and Returns</h4>
             For more information visit our <a href="#">Refunds and Returns policy</a><br>
-            payments powered by<h3>WorldPay</h3>
-           <div> For help with your payment visit the <a href="#">WorldPay Help</a></div>
+            <div id = "text"> For help with your payment visit the <a href="#">WorldPay Help</a></div><br>
+             <img src="Images/worldpay.jpg" id="worldpay">
         </div>
     </div>
 </aside>
