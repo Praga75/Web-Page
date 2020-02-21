@@ -1,0 +1,108 @@
+header {
+    margin-left: 1cm;
+}
+body {
+
+    height:100%;
+}
+label {
+    width:10cm;
+font-size : 100%;
+}
+footer {
+    background-color:chartreuse;
+    padding: 0.25px;
+    margin-top: 0.2cm;
+    text-align : center;
+}
+h2,h3,h4 {
+    color: rgb(22, 134, 209);
+}
+
+#language ,#country{
+    width: 5cm;
+}
+.Container {
+    display: block;
+    margin-left: 50%;
+}
+
+th {
+    background-color: rgb(173, 243, 43);
+}
+
+table{
+    background-color: rgb(236, 154, 95);
+    text-align: left;
+}
+.greenbar {
+    height: 1cm;
+    background: rgb(173, 243, 43);
+    border: 0;
+}
+
+.style{
+    border: 0;
+    height: 1.5px;
+    background: rgb(19, 145, 7);
+    margin-right: 18%;
+}
+
+.payment {    
+    background-color: white;
+}
+#flower {
+    margin-left: 7cm;
+}
+h2{
+    padding-left: 10px;
+}
+#visa {
+    height: 2cm;
+    width: 3cm;
+    margin-left: 2.2cm;
+}
+#worldpay {
+    margin-right: 12%;
+}
+
+#restart,#cancel,#quesMark1,#quesMark2,#flower {
+    height: 0.5cm;
+    width: 0.5cm;
+    padding-right: 0.2cm;
+}
+
+.controls {
+    margin: 0.5cm;
+}
+#quesMark1 {
+    position: relative;
+    right: -85%
+}
+#quesMark2 {
+    position: relative;
+    right: -77%;
+}
+#sideImage  {
+height: 50%;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 11%;
+}
+.sideDiv {
+    float: left;
+    margin-right: -50%;
+    max-width: 45%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]{
+    width: 100%;
+} 
+
+#FaxId, #Telephone, #Postcode {
+    width: 50%;
+}

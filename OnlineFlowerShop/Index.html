@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        OnlineFlowerShop
+    </title>
+    <link rel="stylesheet" href="/Style/Index.css" type="text/css">
+<script src="/Script/Index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2>FLOWER SHOP ONLINE</h2>
+    </header>
+    <hr class="greenbar">
+<div class = "sideDiv">
+<img src="/Images/SideImage.jpg" id="sideImage" />
+</div>
+    <aside>
+    <div class="Container">
+
+        <h3>Secure Payment Page</h3>
+        <table class="payment">
+           <!-- <col width="130">-->
+            <tr>
+                <td>
+                    <label>Select Language</label>
+                </td>
+                <td>
+                    <select id="language">
+                        <option value="English">English </option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Telugu">Telugu </option>
+                    </select>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Payment method </td>
+                <td><b>Visa</b></td>
+                <td rowspan="3"><img src="/Images/Visa.jpg" id="visa"></td>
+            
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td><b>Item ordered</b></td>
+            </tr>
+            <tr>
+                <td>Amount </td>
+                <td><b>$100.00</b></td>
+            </tr>
+            
+        </table>
+        
+        <table>
+            <tr>
+                <th colspan=2>Card Details<img src="/Images/QuestionMark.jpg" id="quesMark1"/></th>
+        
+            </tr>
+                <tr>
+                    <td colspan=2>you must fill in fiels marked with *</td>
+                </tr>
+                <tr>
+                    <td>* Card number </td>
+                    <td><input type ="number"  id="cardNumber"name="CardNumber" onchange="validateCardNumber()" required><br>
+                   <div id="cardNum"></div>
+                    </td>
+            
+                </tr>
+                <tr>
+                    <td>* Security code </td>
+                    <td><input type="password" maxlength="4" id="passwordId" onchange="validateSecurityCode()" required><br>
+                        <div id="passwordComment"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>* Expiry date </td>
+                    <td><select id="month" required>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+
+                        <select id="year" required>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>* Cardholder's name </td>
+                    <td> <input type="text" name="holderName" maxlength = "50"size="50cm" required></td>
+                </tr>
+            <tr>
+                <th colspan=2>Cardholder details<img src="/Images/QuestionMark.jpg" id="quesMark2" /></th>
+            </tr>
+            <tr>
+                <td colspan=2>you must fill in fiels marked with *</td>
+            </tr>
+            <tr>
+                <td>* Address 1 </td>
+                <td><input type="text" name="Addr1" maxlength = "30" size="50cm" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td> Address 2 </td>
+                <td> <input type="text" name="addr2" maxlength = "50" size="50cm" ></td>
+            </tr>
+            <tr>
+                <td> Address 3 </td>
+                <td><input type="text" name="addr3" maxlength = "500" size="50cm"></td>
+            </tr>
+            <tr>
+                <td>* Town/City </td>
+                <td> <input type="text" name="town/city" size="50cm" required></td>
+            </tr>
+            <tr>
+
+                <td>Religion </td>
+                <td><input type="text" name="Religion" size="50cm"> </td>
+            </tr>
+            <tr>
+                <td>* Postcode/Zip code </td>
+                <td> <input type="number" id="Postcode" onchange="validatePostCode()" required>
+                <div id="PostCodeComment"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>* Country </td>
+                <td>
+                    <select id="country" required>
+                        <option value="United Kingdom"> United Kingdom</option>
+                        <option value="India"> India </option>
+                        <option value="Japan"> Japa </option>
+                        <option value=" Australia "> Australia </option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Telephone </td>
+                <td><input type="number" id="Telephone" onchange="validateMobileNumber()">
+                <div id = "mobileNumber"></div></td>
+                
+            </tr>
+
+            <tr>
+                <td> Fax </td>
+                <td><input type="number" id="FaxId"  name="Fax"onchange = "validateFax()" >
+                <div id="FaxComment"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>* Email address </td>
+                <td> <input type="text" id="Email" size="50cm" onchange="ValidateEmail()" required>
+                <div id="mailId"></div>
+            </td>
+            </tr>
+        </table>
+        
+
+        <div class="controls">
+            <img src="/Images/restart.png" id="restart"><label>START AGAIN</label><br>        
+            <img src="/Images/Cancel_icon.svg" id="cancel"><label>CANCEL </label>
+            <img src="/Images/flower.png" id="flower"><label><a href = "#"  onclick="validateNullField()">MAKE PAYMENT </a></label><br>
+            
+        </div>
+        <hr class="style">
+        <div class="additionalInfo">
+            <h4>Refunds and Returns</h4>
+            For more information visit our <a href="#">Refunds and Returns policy</a><br>
+            payments powered by<h3>WorldPay</h3>
+           <div> For help with your payment visit the <a href="#">WorldPay Help</a></div>
+        </div>
+    </div>
+</aside>
+    <footer>
+        <h2>Thank you for shopping at Flowershop. Have a nice day</h2>
+    </footer>
+</body>
+
+</html>
