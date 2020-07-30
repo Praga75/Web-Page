@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Basic Form</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h2>Welcome to Web Development Course</h2>
+        <div class="content">
+            <h3>Do you want to login or register?</h3>
+            
+            <input type="button" value="Login" id="loginbtn" onclick="displayLoginForm()">
+            <input type="button" value="Register" onclick="displayRegForm()">   
+        </div>
+        <div class="login">
+            <form action="success.html" method="post" id="loginId" >
+                <h3>Login</h3>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="LoginEmail" name="Email" required="required" onchange="validateLoginEmail()">
+                    <span id="LoginmailId">
+                    </span>
+                </div>
+            
+                <div>
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="LoginPassword" name="Password" required="required" onchange="validateLoginPassword()">
+                    <span id="Loginpassword">
+                    </span>
+                </div>           
+                <button>Login</button>
+                
+            </form>
+
+        </div>
+        <div class="Register">
+            <form action="success.html" method="post" id="RegId">
+               <h3>Register</h3>
+                    <div>
+                        <label for="txtName">Name</label>
+                        <input type="text" id="Name" placeholder="Enter name" name="Name" required="required" onchange="validateUserName()" />
+                        <span id="userName">
+                        </span>
+                    </div>
+                
+    
+                    <div>
+                        <label for="txtEmail">Email</label>
+                        <input type="email" id="Email" placeholder="Email" name="Email" required="required" onchange="validateEmail()" />
+                        <span id="mailId">
+                        </span>
+                    </div>
+    
+                    <div>
+                        <label for="txtMobile">Mobile</label>
+                        <input type="text" id="MobileNumber" placeholder="Mobile" name="Mobile" required="required" maxlength="10" onchange="validateMobileNumber()" />
+                        <span id="mobileNumber">
+                        </span>
+                    </div>
+               
+    
+                
+                    <div>
+                        <label for="txtPassword">Password</label>
+                        <input type="password"  id="Password" placeholder="Password" name="Password" required="required" onchange="validatePassword()" />
+                        <span id="password">
+                        </span>
+                    </div>
+    
+                    <div>
+                        <label for="txtPassword">Confirm Password</label>
+                        <input type="password"  id="ConfirmPassword" placeholder="Confirm Password" name="ConfirmPassword" required="required" onchange="validateConfirmPassword()" />
+                        <span id="confirmpassword">
+                        </span>
+                    </div>
+                
+    
+                <button type="submit" >Register</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

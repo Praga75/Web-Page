@@ -1,0 +1,55 @@
+body {
+    
+    background-image: url("image/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+h2 {
+    text-align: center;
+}
+.content {
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 20px;
+    text-align: center;
+}
+form {
+    border: 1px solid black;
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    display: none;
+    text-align: center;
+    background-color: wheat;
+  }
+  input[type=text], input[type=password],input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+  }
+  input[type=button] {
+
+    background-color: #e7e7e7; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
